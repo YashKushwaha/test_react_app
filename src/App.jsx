@@ -1,12 +1,16 @@
 //import { useChat } from "./hooks/useChat";
 //import { ChatWindow } from "./components/ChatWindow";
 
+import { Sidebar } from "./components/Sidebar";
+import { LayoutContent } from "./components/LayoutContent";
+
+
 export default function App() {
   console.log('App loaded')
   return (
-  <div class="app-layout">
-    <div class="layout-sidebar">Sidebar</div>
-    <div class="layout-content">layout</div>
+  <div className="app-layout">
+    <Sidebar />
+    <LayoutContent />
   </div>
   );
 }
